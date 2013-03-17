@@ -34,6 +34,6 @@ Public Const DevBuild        As Byte = 0
 
 Public Const Advertisements  As Boolean = False
 Public Const LANBuild        As Boolean = False
-Public Const PeerBuild       As Boolean = False
+Public Const PeerBuild       As Boolean = True
 Public Const StartLog        As Boolean = False
 Public Const Encrypted       As Boolean = False 'Buggy?

@@ -3265,7 +3265,7 @@ End Sub
 Public Function SendTo(buff() As Byte, pID As Integer, Optional Terminate As Boolean = False) As Integer
     Dim I As Integer
     ReDim Preserve buff(UBound(buff) + 1)
-    buff(UBound(buff)) = B 'Faster than CopyMemory
+    buff(UBound(buff)) = 3 'Faster than CopyMemory
     For I = 1 To frmMain.Socket1.UBound
         If frmMain.Socket1(I).State = 7 Then
             If I <= UBound(UserDat) Then
